@@ -6,7 +6,7 @@
 	- First search: full name, <br>Second search: first three letters + * + year of birth
 	- If order exists → go to **[Order Exists](#order-exists)**
 	- If only patient exists → go to **[Contact Exists](#contact-exists)**
-3. Create new contact [patient]
+3. Create new contact [patient]<br>
 	![](./images/image1.PNG)
 	![](./images/image2.PNG) ``TODO edit image in ms paint``
 4. Order entry guide
