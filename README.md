@@ -7,8 +7,8 @@
 	- If order exists → go to **[Order Exists](#order-exists)**
 	- If only patient exists → go to **[Contact Exists](#contact-exists)**
 3. Create new contact [patient]
-	- ![]("./images/image1.PNG")
-	- ![]("./images/image2.PNG")
+	- ![](./images/image1.PNG)
+	- ![](./images/image2.PNG)
 4. Order entry guide
 	- Channel = paper, Triage = new, bill type = per order, description = AT `initials`
 5. Create necessary Order Roles
