@@ -65,15 +65,13 @@
 	- If missing data issue is ESI, test type, or patient DOB discrepency, check `Lab Hold`
 4. Enter the issue into the `Description`
 	- Always start with "NEED:" followed by one blank line
-	- Example:
-	> NEED:
+	- Example: > NEED:
 	>
 	> CONF PT NAME
 	> John Doe per order vs Jane Doe per PR
 5. Enter info into the `Subject`
 	- Format: (*province*) *case type*
-	- Example
-	> (QC) MD
+	- Example > (QC) MD
 6. Select primary customer
 	- Typically ordering Order Role
 7. Save and change `Case Owner` to Queue
