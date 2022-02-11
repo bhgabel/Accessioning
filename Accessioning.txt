@@ -30,7 +30,7 @@
 	• ER status, node status
 
 8) Edit order details
-	• signiture date, multiple primaries, MRN
+	• signature date, multiple primaries, MRN
 
 9) Order intake complete, LIMS Accessioning
 
