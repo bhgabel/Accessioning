@@ -1,4 +1,4 @@
-# Paper Orders {#header}
+# Paper Orders
 
 1. Check ESI on block/slides to order and path report
 	- Find in path report: name, DOB, gender, ESI, DOC, diagnosis
@@ -32,7 +32,7 @@
 11. Enter data into LIMS
 	- ESI, tracking number, number of stuff [blocks/slides], container code, DOC
 
-### Order Exists {#order-exists}
+### Order Exists
 
 1. Go to Order Intake dropdown
 	- Enter OR number and tracking number
@@ -43,7 +43,7 @@
 4. LIMS Accessioning
 	- ESI, tracking number, number of stuff [blocks/slides], container code, DOC
 
-### Contact Exists {#contact-exists}
+### Contact Exists
 
 1. Check and enter any missing patient information
 2. Order Entry Guide
@@ -51,6 +51,6 @@
 3. Go to Electronic Documents
 	- Check that all information matches with appropriate patient
 	- Re-index<br>select Specimen Related Materials from document type dropdown<br>enter order number<br>![](./images/image3.PNG)
-4. Continue from Step 5 above [return to top](#header)
+4. Continue from Step 5 above [return to top](#paper-orders)
 
-### Missing Data Cases {#md-cases}
+### Missing Data Cases
