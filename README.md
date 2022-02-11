@@ -8,9 +8,9 @@
 	- If only patient exists → go to **[Contact Exists](#contact-exists)**
 3. Create new contact [patient]<br>
 	![](./images/image1.PNG)
-	![](./images/image2.PNG) ``TODO edit image in ms paint``
+	![](./images/image2.PNG)
 4. Order entry guide
-	- Channel = paper, Triage = new, bill type = per order, description = AT `initials`
+	- Channel = paper<br>Triage = new<br>Bill type = per order<br>Description = AT `initials`
 5. Create necessary Order Roles<br>
 	![](./images/image4.PNG)
 	- **Ordering**: find approved account via *CR#*, hospital name, address, or fax<br>Need approved contact (oncologist)
@@ -27,7 +27,7 @@
 	- Submitting diagnosis
 	- ER status, Node status
 9. Edit order details
-	- Signature date, multiple primaries, MRN
+	- Signature date, multiple primaries, MRN<br>![](./images/image6.PNG)
 10. Order Intake Complete, LIMS Accessioning
 11. Enter data into LIMS
 	- ESI, tracking number, number of stuff [blocks/slides], container code, DOC
@@ -51,6 +51,6 @@
 3. Go to Electronic Documents
 	- Check that all information matches with appropriate patient
 	- Re-index<br>select Specimen Related Materials from document type dropdown<br>enter order number<br>![](./images/image3.PNG)
-4. Continue from Step 5 above [return to top](#paper-orders)
+4. Continue from Step 5 above<br>[return to top](#paper-orders)
 
 ### Missing Data Cases
