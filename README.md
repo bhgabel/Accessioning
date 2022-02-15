@@ -64,7 +64,7 @@
 	- Type defaults to Missing Data
 3. Check `Sample Received` and `Report Distribution Hold`
 	- If missing data issue is ESI, test type, or patient DOB discrepency, check `Lab Hold`
-	- If on hold, add "*number of stuff* (*ESI*) on hold in Intellicab" to `Activity History` tab of Case<br>- Place in red folder then in Sample Holds to Be Scanned bin
+	- If on hold, add "*number of stuff* (*ESI*) on hold in Intellicab" to `Activity History` tab of Case<br>Place in red folder then in Sample Holds to Be Scanned bin
 	- Example:
 	> 15 USS (S22-123-A1) on hold in Intellicab<br>
 	> 1 blk (S22-123-A2) on hold in Intellicab
