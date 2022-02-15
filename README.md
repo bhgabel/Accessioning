@@ -66,7 +66,7 @@
 	- If missing data issue is ESI, test type, or patient DOB discrepency, check `Lab Hold`
 	- If on hold, add "*number of stuff* (*ESI*) on hold in Intellicab" to `Activity History` tab of Case
 	- Example:
-	> 15 USS (S22-123-A1) on hold in Intellicab
+	> 15 USS (S22-123-A1) on hold in Intellicab<br>
 	> 1 blk (S22-123-A2) on hold in Intellicab
 
 4. Enter the issue into the `Description`
@@ -74,7 +74,7 @@
 	- Example: 
 	> NEED:
 	>
-	> CONF PT NAME
+	> CONF PT NAME<br>
 	> John Doe per order vs Jane Doe per PR
 
 5. Enter info into the `Subject`
