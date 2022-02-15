@@ -11,7 +11,7 @@
 	![](./images/image1.PNG)
 	![](./images/image2.PNG)
 4. `Order Entry Guide`
-	- Channel = paper<br>Triage = new<br>Bill type = per order<br>Description = AT *initials*
+	- Channel = paper<br>Triage = new<br>Bill type = per order<br>Description = AT *your initials*
 5. Create Order Roles<br>
 	![](./images/image4.PNG)
 	- **Ordering**: find approved account via CR#, fax, address, or hospital name<br>Need approved contact (oncologist)
@@ -66,8 +66,8 @@
 	- If missing data issue is ESI, test type, or patient DOB discrepency, check `Lab Hold`
 	- If on hold, add "*number of stuff* (*ESI*) on hold in Intellicab" to `Activity History` tab of Case
 	- Example:
-> 15 USS (S22-123-A1) on hold in Intellicab
-> 1 blk (S22-123-A2) on hold in Intellicab
+	> 15 USS (S22-123-A1) on hold in Intellicab
+	> 1 blk (S22-123-A2) on hold in Intellicab
 4. Enter the issue into the `Description`
 	- Always start with "NEED:" followed by one blank line
 	- Example: 
