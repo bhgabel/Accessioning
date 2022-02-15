@@ -68,6 +68,7 @@
 	- Example:
 	> 15 USS (S22-123-A1) on hold in Intellicab
 	> 1 blk (S22-123-A2) on hold in Intellicab
+
 4. Enter the issue into the `Description`
 	- Always start with "NEED:" followed by one blank line
 	- Example: 
@@ -75,6 +76,7 @@
 	>
 	> CONF PT NAME
 	> John Doe per order vs Jane Doe per PR
+
 5. Enter info into the `Subject`
 	- Format: (*province*) *case type*
 	- Example 
