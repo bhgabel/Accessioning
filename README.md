@@ -2,6 +2,7 @@
 
 1. Check ESI on block/slides to order and path report
 	- Find in path report: name, DOB, gender, ESI, DOC, diagnosis
+	- If slides only have S barcode sticker, add "OK to proceed: S Barcode is physical identifier/ESI is per order form and to be used for reporting"<br> to notes section in LIMS
 2. Duplicate patient search
 	- First search: full name, <br>Second search: first three letters of first and last + * + year of birth
 	- If order exists → go to **[Order Exists](#order-exists)**
@@ -15,19 +16,19 @@
 	![](./images/image4.PNG)
 	- **Ordering**: find approved account via CR#, fax, address, or hospital name<br>Need approved contact (oncologist)
 	- **Specimen Submitting**: find approved account via same method<br>Need approved contact (pathologist)<br>If not provided on order form → same as Ordering
-	- **Material Return**: only required if different account from Specimen Submitting<br>Priority for location: given on order, specific paper provided, 2/3's rule (match between specimen submitting, air bill, and path report)
+	- **Material Return**: only required if different account from Specimen Submitting<br>Priority: given on order, specific paper provided, 2/3's rule (match between specimen submitting, air bill, and path report)
 	- Check each account for notes
 6. Edit each Order role
 	- Select appropriate address affiliation, ensure phone and fax match order form
 7. Create Specimen Arrival Case
-	- Required data: tracking number, specimen receiving [specimen submitting], material return
+	- Required data: tracking number, specimen receiving - primary customer [specimen submitting], material return
 8. Edit Order Line Item
 	- ICD code defaults: female = C50.919, male = C50.929
 		- Not required for Bill Account
 	- Submitting diagnosis
 	- ER status, Node status
 9. Edit Order Details
-	- Signature date, multiple primaries, MRN<br>![](./images/image6.PNG)
+	- Signature date, multiple primaries option, MRN<br>![](./images/image6.PNG)
 10. `Order Intake Complete`, `LIMS Accessioning`
 11. Enter data into LIMS
 	- ESI, tracking number, number of stuff [blocks/slides], container code, DOC
@@ -39,7 +40,7 @@
 
 1. Go to `Order Intake` dropdown
 	- Enter order number and tracking number, search
-2. Process Case [Specimen Arrival]
+2. `Process Case` [Specimen Arrival]
 	- Need tracking number, primary customer, and material return
 	- Can select material return from dropdown if same as primary customer<br>![](./images/image5.PNG)
 3. Ensure there are other no open cases
@@ -65,7 +66,8 @@
 	- If missing data issue is ESI, test type, or patient DOB discrepency, check `Lab Hold`
 	- If on hold, add "*number of stuff* (*ESI*) on hold in Intellicab" to `Activity History` tab of Case
 	- Example:
-> 15 USS (S22-426-B4) on hold in Intellicab
+> 15 USS (S22-123-A1) on hold in Intellicab
+> 1 blk (S22-123-A2) on hold in Intellicab
 4. Enter the issue into the `Description`
 	- Always start with "NEED:" followed by one blank line
 	- Example: 
@@ -80,5 +82,5 @@
 6. Select primary customer
 	- Typically ordering Order Role
 7. Save and change `Case Owner` to Queue
-	- Will select appropriate queue, such as International - MD
+	- Need select appropriate queue, such as *International - MD*
 ![](./images/image7.PNG)
