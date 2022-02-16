@@ -35,6 +35,7 @@
 12. Print two O-Barcode Labels and Accession
 	- Place one O-barcode on the folder and one on the order form
 	- Place the other sticker(s) on the block/slides
+13. Close LIMS before starting next sample
 
 ### Order Exists
 
@@ -55,6 +56,7 @@
 3. `Electronic Documents`
 	- Check that all information matches with appropriate patient
 	- `Re-index`<br>Select Specimen Related Materials from document type dropdown<br>Enter order number<br>![](./images/image3.PNG)
+	- Open the Case, add the OR number to primary order<br>Ensure that there are no items from left of `Fax`<br>If nothing, close the case. Else, leave open<br>![](./images/image8.PNG)
 4. Continue from Step 5 above<br>[Return to top](#paper-orders)
 
 ### Missing Data Cases
@@ -64,7 +66,7 @@
 	- Type defaults to Missing Data
 3. Check `Sample Received` and `Report Distribution Hold`
 	- If missing data issue is ESI, test type, or patient DOB discrepency, check `Lab Hold`
-	- If on hold, add "*number of stuff* (*ESI*) on hold in Intellicab" to `Activity History` tab of Case<br>Place in red folder then in Sample Holds to Be Scanned bin
+	- If on hold, add "*number of stuff* (*ESI*) on hold in Intellicab" to `Activity History` tab of Case<br>Place in red folder, then in Sample Holds to Be Scanned bin
 	- Example:
 	> 15 USS (S22-123-A1) on hold in Intellicab<br>
 	> 1 blk (S22-123-A2) on hold in Intellicab
