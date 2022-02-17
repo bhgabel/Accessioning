@@ -1,6 +1,6 @@
 # Paper Orders
 
-Refer to **SOP-OP-PA-03-001 Order and Materials Processing** for official instructions
+Refer to *SOP-OP-PA-03-001 Order and Materials Processing* for official instructions
 
 1. Check ESI on block/slides to order and path report
 	- Find in path report: name, DOB, gender, ESI, DOC, diagnosis
@@ -42,10 +42,12 @@ Refer to **SOP-OP-PA-03-001 Order and Materials Processing** for official instru
 ## Order Exists
 
 Possible outcomes of existing order:
-	a. Order is processing → [Order Intake](#order-intake)
-	b. Order is a failure → [Resubmission](#resubmission)
-	c. Order is closed and 6+ weeks old → Multiple Specimen
-	d. Order is less than 6 weeks old → Potential Duplicate
+<ol type="a">
+	<li>Order is processing → [Order Intake](#order-intake)</li>
+	<li>Order is a failure → [Resubmission](#resubmission)</li>
+	<li>Order is closed and 6+ weeks old → Multiple Specimen</li>
+	<li>Order is less than 6 weeks old → Potential Duplicate</li>
+</ol>
 
 
 #### Order Intake
