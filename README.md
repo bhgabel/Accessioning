@@ -1,5 +1,7 @@
 # Paper Orders
 
+Refer to **SOP-OP-PA-03-001 Order and Materials Processing** for official instructions
+
 1. Check ESI on block/slides to order and path report
 	- Find in path report: name, DOB, gender, ESI, DOC, diagnosis
 	- If slides only have S barcode sticker, add "OK to proceed: S Barcode is physical identifier/ESI is per order form and to be used for reporting"<br> to notes section in LIMS
@@ -37,29 +39,45 @@
 	- Place the other sticker(s) on the block/slides
 13. Close LIMS before starting next sample
 
-### Order Exists
+## Order Exists
 
-1. Go to `Order Intake` dropdown
-	- Enter order number and tracking number, search
-2. `Process Case` [Specimen Arrival]
+Possible outcomes of existing order:
+	a. Order is processing → [Order Intake](#order-intake)
+	b. Order is a failure → [Resubmission](#resubmission)
+	c. Order is closed and 6+ weeks old → Multiple Specimen
+	d. Order is less than 6 weeks old → Potential Duplicate
+
+
+#### Order Intake
+Should already have the OR number printed at the top of the order form
+1. Go to `Order Intake` from dropdown on left panel
+	- Enter order number and tracking number, search<br>![](./images/image9.PNG)
+2. `Process Case` [Specimen Retrieval]
 	- Need tracking number, primary customer, and material return
 	- Can select material return from dropdown if same as primary customer<br>![](./images/image5.PNG)
 3. Ensure there are other no open cases
 4. LIMS Accessioning
 	- ESI, tracking number, number of stuff [blocks/slides], container code, DOC
 
-### Contact Exists
+#### Resubmission
+1. Open the existing order and ensure a failure case exists
+2. Open the failure case, change `Status` to Closed and `Priority` to High
+3. Open OLI, scroll down and click `Resubmission`
 
-1. Check and enter any missing patient information
-2. `Order Entry Guide`
+
+## Contact Exists
+
+1. Double check that there are no orders associated with this patient
+2. Verify data and enter any missing patient information
+3. `Order Entry Guide`
 	- Channel = paper, Triage = new, bill type = per order, description = AT `initials`
-3. `Electronic Documents`
+4. `Electronic Documents`
 	- Check that all information matches with appropriate patient
 	- `Re-index`<br>Select Specimen Related Materials from document type dropdown<br>Enter order number<br>![](./images/image3.PNG)
 	- Open the Case, add the OR number to primary order<br>Ensure that there are no items from left of `Fax`<br>If nothing, close the case. Else, leave open<br>![](./images/image8.PNG)
-4. Continue from Step 5 above<br>[Return to top](#paper-orders)
+5. Continue from Step 5 above<br>[Return to top](#paper-orders)
 
-### Missing Data Cases
+## Missing Data Cases
 
 1. If any data required above is not found on the order form or does not match the path report, create a MD case
 2. Create new case [Customer Outreach]
@@ -85,4 +103,4 @@
 	- Typically ordering Order Role
 7. Save and change `Case Owner` to Queue
 	- Need select appropriate queue, such as *International - MD*
-![](./images/image7.PNG)
+![](./images/image7.PNG)<br>[Return to top](#paper-orders)
