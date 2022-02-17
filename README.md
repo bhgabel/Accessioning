@@ -43,7 +43,7 @@ Refer to *SOP-OP-PA-03-001 Order and Materials Processing* for official instruct
 
 Possible outcomes of existing order:
 <ol type="a">
-	<li>Order is processing → [Order Intake](#order-intake)</li>
+	<li>Order is processing → <a href="#order-intake">Order Intake<a/></li>
 	<li>Order is a failure → [Resubmission](#resubmission)</li>
 	<li>Order is closed and 6+ weeks old → Multiple Specimen</li>
 	<li>Order is less than 6 weeks old → Potential Duplicate</li>
