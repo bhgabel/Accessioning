@@ -25,8 +25,8 @@ Refer to *SOP-OP-PA-03-001 Order and Materials Processing* for official instruct
 7. Create Specimen Arrival Case
 	- Required data: tracking number, specimen receiving - primary customer [specimen submitting], material return
 8. Edit Order Line Item
-	- ICD code defaults: female = C50.919, male = C50.929
-		- Not required for Bill Account
+	- ICD code only required field for Private Insurance Bill type
+		- Defaults: IBC: female = C50.919, male = C50.929<br>DCIS: D05.90<br>Colon: C18.9<br>Prostate: C61
 	- Submitting diagnosis
 	- ER status, Node status
 9. Edit Order Details
@@ -44,7 +44,7 @@ Refer to *SOP-OP-PA-03-001 Order and Materials Processing* for official instruct
 Possible outcomes of existing order:
 <ol type="a">
 	<li>Order is processing → <a href="#order-intake">Order Intake<a/></li>
-	<li>Order is a failure → [Resubmission](#resubmission)</li>
+	<li>Order is a failure → <a href="#resubmission">Resubmission<a/></li>
 	<li>Order is closed and 6+ weeks old → Multiple Specimen</li>
 	<li>Order is less than 6 weeks old → Potential Duplicate</li>
 </ol>
@@ -76,7 +76,7 @@ Should already have the OR number printed at the top of the order form
 4. `Electronic Documents`
 	- Check that all information matches with appropriate patient
 	- `Re-index`<br>Select Specimen Related Materials from document type dropdown<br>Enter order number<br>![](./images/image3.PNG)
-	- Open the Case, add the OR number to primary order<br>Ensure that there are no items from left of `Fax`<br>If nothing, close the case. Else, leave open<br>![](./images/image8.PNG)
+	- Open the Case, add the OR number to primary order<br>Ensure that there are no items from left of `Fax`<br>If all items show [0], change `Status` to Closed. Else, leave open<br>![](./images/image8.PNG)
 5. Continue from Step 5 above<br>[Return to top](#paper-orders)
 
 ## Missing Data Cases
