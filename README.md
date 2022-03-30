@@ -107,7 +107,7 @@ Should already have the OR number printed at the top of the order form
 5. Enter info into the `Subject`
 	- Format: (*province or partner*) *case type*
 	- Example 
-	> (QC) MD
+	> (QC) MD<br>
 	> (NewBridge) SI
 6. Select primary customer
 	- Ordering Order Role
