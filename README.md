@@ -50,7 +50,7 @@ Possible outcomes of existing order:
 <ol type="a">
 	<li>Order is processing → <a href="#order-intake">Order Intake<a/></li>
 	<li>Order is a failure → <a href="#resubmission">Resubmission<a/></li>
-	<li>Order is closed and 6+ weeks old → Multiple Specimen<br>Place in yellow folder, then in appropriate bin</li>
+	<li>Order is closed and 6+ weeks old → Multiple Specimen → Place in yellow folder, then in appropriate bin</li>
 	<li>Order is less than 6 weeks old → Potential Duplicate</li>
 </ol>
 
