@@ -1,14 +1,14 @@
-# Paper Orders
+# Intl Order Processing
 
 Refer to *SOP-0191 Specimen Materials Processing and Accessioning* for official instructions
 
 **Any information on the order form should be entered into SFDC at some point during the accessioning process**
 
-1. Check ESI on block/slides to order and path report
-	- Find in path report: name, DOB, gender, ESI, DOC, diagnosis
-	- If slides only have S barcode sticker, add "OK to proceed: S Barcode is physical identifier/ESI is per order form and to be used for reporting"<br> to notes section in LIMS
+1. Compare ESI on block/slides to req and path report
+	- Find in path report: name, DOB, gender, ESI, DOC, subdx
+	- If slides only have S barcode sticker, add to notes section in LIMS<br>"OK to proceed: S Barcode is physical identifier/ESI is per order form and to be used for reporting"
 2. Duplicate patient search
-	- First search: full name, <br>Second search: first three-four letters of first and last + * + year of birth
+	- First search: full name, <br>Second search: first 3-4 letters of first and last + * + year of birth
 	- If order exists → go to **[Order Exists](#order-exists)**
 	- If only patient exists → go to **[Contact Exists](#contact-exists)**
 	- Example:
@@ -21,7 +21,7 @@ Refer to *SOP-0191 Specimen Materials Processing and Accessioning* for official 
 5. Create Order Roles<br>
 	![](./images/image4.PNG)
 	- **Ordering**: find approved account via CR#, fax, address, or hospital name<br>Need approved contact (oncologist)
-	- **Specimen Submitting**: find approved account via same method<br>Need approved contact (pathologist)<br>If not provided on order form → same as Ordering
+	- **Specimen Submitting**: find approved account via same method<br>Need approved contact (pathologist)<br>If not provided on order form → same as air bill
 	- **Material Return** [optional]: only required if different account from Specimen Submitting<br>Priority: given on order, specific paper provided, 2/3's rule (match between specimen submitting, air bill, and path report)
 	- Check each account for relevant notes
 6. Edit each Order role
@@ -31,7 +31,11 @@ Refer to *SOP-0191 Specimen Materials Processing and Accessioning* for official 
 	- Can select material return from dropdown if same as primary customer<br>![](./images/image5.PNG)
 8. Edit Order Line Item
 	- ICD code only required field for Private Insurance Bill type
-		- Defaults: IBC: female = C50.919, male = C50.929<br>DCIS: D05.90<br>Colon: C18.9<br>Prostate: C61
+		- Defaults:
+		- IBC: female = C50.919, male = C50.929
+		- DCIS: D05.90
+		- Colon: C18.9
+		- Prostate: C61
 	- Submitting diagnosis
 	- ER status, Node status
 9. Edit Order Details
@@ -62,7 +66,7 @@ Should already have the OR number printed at the top of the order form
 	- Enter order number and tracking number, Search<br>![](./images/image9.PNG)
 2. `Process Case` [Specimen Retrieval]
 	- Need tracking number, primary customer, and material return
-3. Ensure there are other no open cases
+3. Ensure there are no other open cases
 4. LIMS Accessioning
 	- ESI, tracking number, number of stuff [blocks/slides], container code, DOC
 
@@ -70,6 +74,8 @@ Should already have the OR number printed at the top of the order form
 1. Open the existing order and ensure a failure case exists
 2. Open the failure case, change `Status` to Open and `Priority` to High
 3. Open OLI, scroll down and click `Resubmission`
+4. Create a new Specimen Arrival case
+5. `LIMS Accessioning`
 
 
 ## Contact Exists
@@ -80,7 +86,7 @@ Should already have the OR number printed at the top of the order form
 	- Channel = paper, Triage = new, bill type = per order, description = AT `initials`
 4. `Electronic Documents`
 	- Check that all information matches with appropriate patient
-	- `Re-index`<br>Select Specimen Related Materials from document type dropdown<br>Enter order number<br>![](./images/image3.PNG)
+	- `Edit` → `Re-index`<br>Select Specimen Related Materials from document type dropdown<br>Enter order number<br>![](./images/image3.PNG)
 	- Open the Case, add the OR number to primary order<br>Ensure that there are no items from left of `Fax`<br>If all items show [0], change `Status` to Closed. Else, leave open<br>![](./images/image8.PNG)
 5. Continue from Step 5 above<br>[Return to top](#paper-orders)
 
@@ -90,24 +96,24 @@ Should already have the OR number printed at the top of the order form
 2. Create new case [Customer Outreach]
 	- Type defaults to Missing Data
 3. Check `Sample Received` and `Report Distribution Hold`
-	- If missing data issue is ESI, test type, or patient DOB discrepency, check `Lab Hold`
-	- If on hold, create `New Note` in `Activity History` tab of Case<br>Add "*number of stuff* RCVD (*ESI*) ON HOLD IN INTELLICAB" as subject<br>Place in red folder, then in Sample Holds to Be Scanned bin
+	- Check `Lab Hold` if discrepency with ESI, test type, patient DOB, or patient name
+	- If on hold, create `New Note` in `Activity History` tab of Case<br>Add "*number of stuff* rcvd (*ESI*) on hold in Intellicab" as subject<br>Place in red folder, then in Sample Holds to Be Scanned bin
 	- Example:
-	> 15 SET OF USS RCVD (S22-123-A1) ON HOLD IN INTELLICAB<br>
-	> 1 BLK RCVD (S22-123-A2) ON HOLD IN INTELLICAB
+	> 15 USS rcvd (S22-123-A1) on hold in Intellicab<br>
+	> 1 blk rcvd (S22-123-A2) on hold in Intellicab
 4. Enter the issue into the `Description`
 	- Always start with "NEED:" followed by one blank line
 	- Example: 
 	> NEED:
 	>
 	> CONF PT NAME<br>
-	> John Doe per order vs Jane Doe per PR
+	> Per req: John Doe<br>Per PR: Jane Due
 5. Enter info into the `Subject`
-	- Format: (*province*) *case type*
+	- Format: (*province/country code*) *case type*
 	- Example 
 	> (QC) MD
 6. Select primary customer
 	- Typically ordering Order Role
-7. Save and change `Case Owner` to Queue
+7. Save and change `Case Owner` to *International - MD* or *Geneva - MD*
 	- Need select appropriate queue, such as *International - MD*
 ![](./images/image7.PNG)<br>[Return to top](#paper-orders)
