@@ -1,8 +1,10 @@
 # Intl Order Processing
 
-Refer to *SOP-0191 Specimen Materials Processing and Accessioning* for official instructions
+Refer to *SOP-0191 Specimen Materials Processing and Accessioning* and *SOP-OP-PA-03-021 International Order and Material Processing* for official instructions
 
-**Any information on the order form should be entered into SFDC at some point during the accessioning process**
+## Paper Orders
+
+**All information on the order form should be entered into SFDC at some point during the accessioning process**
 
 1. Compare ESI on block/slides to req and path report
 	- Find in path report: name, DOB, gender, ESI, DOC, subdx
@@ -14,10 +16,11 @@ Refer to *SOP-0191 Specimen Materials Processing and Accessioning* for official 
 	- Example:
 	> Patient: John Smith (01/01/1964), Search "joh* smi* 1964"
 3. Create new Contact [Patient]<br>
+	- Enter all information in the Patient Information section of the req
 	![](./images/image1.PNG)
 	![](./images/image2.PNG)
 4. `Order Entry Guide`
-	- Channel = paper<br>Triage = new<br>Bill type = per order<br>Description = AT *your initials*
+	- Channel = paper<br>Triage = new<br>Bill type = per order<br>Description = AT [*your initials*]
 5. Create Order Roles<br>
 	![](./images/image4.PNG)
 	- **Ordering**: find approved account via CR#, fax, address, or hospital name<br>Need approved contact (oncologist)
@@ -56,7 +59,7 @@ Possible outcomes of existing order:
 	<li>Order is processing → <a href="#order-intake">Order Intake<a/></li>
 	<li>Order is a failure → <a href="#resubmission">Resubmission<a/></li>
 	<li>Order is closed and 6+ weeks old → Multiple Specimen → Place in yellow folder</li>
-	<li>Order is close and less than 6 weeks old → Potential Duplicate → Create order and place sample on hold</li>
+	<li>Order is closed and less than 6 weeks old → Potential Duplicate → Create order and place sample on hold</li>
 </ol>
 
 
@@ -96,7 +99,7 @@ Should already have the OR number printed at the top of the order form
 2. Create new case [Customer Outreach]
 	- Type defaults to Missing Data
 3. Check `Sample Received` and `Report Distribution Hold`
-	- Check `Lab Hold` if discrepency with ESI, test type, patient DOB, or patient name
+	- Check `Lab Hold` and hold the sample for any discrepency with ESI, test type, patient DOB, or patient name
 	- If on hold, create `New Note` in `Activity History` tab of Case<br>Add "*number of stuff* rcvd (*ESI*) on hold in Intellicab" as subject<br>Place in red folder, then in Sample Holds to Be Scanned bin
 	- Example:
 	> 15 USS rcvd (S22-123-A1) on hold in Intellicab<br>
@@ -117,3 +120,17 @@ Should already have the OR number printed at the top of the order form
 7. Save and change `Case Owner` to *International - MD* or *Geneva - MD*
 	- Need select appropriate queue, such as *International - MD*
 ![](./images/image7.PNG)<br>[Return to top](#paper-orders)
+
+## Country Specific Notes
+| Country | Code | Billing | Misc |
+| --- | --- | --- | --- | --- |
+| Ontario, Canada | ON | private insurance | Need OHIP approval paperwork, if missing create MD case to INTL Logistics |
+| Quebec, Canada | QC | bill acct | Need RAMQ + 2 signatures, if missing create MD case to INTL Logistics |
+| rest of Canada | AB, BC, NL, NS, NB, MB, PE, SK | bill acct | N/A |
+| Singapore | SG | patient pre-pay | mat return defaults to Hardy Cheung |
+| Malaysia | MY | patient pre-pay | mat return defaults to Hardy Cheung |
+| Hong Kong | Jacobson | bill acct | Partner is Jacobson (CR008894), addtl report rcvr Minne Wong (CT023976) |
+| Middle East + Northern Africa | NBP | bill acct | Partner is Newbridge (CR008898), addtl report rcvd Suzette Azar (CT030636) |
+| South Africa | RSA | bill acct | Partner is PharmaCentrix (CR008871), cannot return specs unless from QLab |
+| Spain | ES | bill acct | Partner is Palex (CR008874), mat return MUST be Palex |
+| Portugal | PT | bill acct | Partner is Palex (CR008874), mat return MUST be LusoPalex (CR008876) |
