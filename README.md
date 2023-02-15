@@ -78,7 +78,7 @@ Should already have the OR number printed at the top of the order form
 2. Open the failure case, change `Status` to Open and `Priority` to High
 3. Open OLI, scroll down and click `Resubmission`
 4. Create a new Specimen Arrival case
-5. `LIMS Accessioning`
+5. `LIMS Accessioning`<br>[Return to top](#intl-order-processing)
 
 
 ## Contact Exists
@@ -91,7 +91,7 @@ Should already have the OR number printed at the top of the order form
 	- Check that all information matches with appropriate patient
 	- `Edit` → `Re-index`<br>Select Specimen Related Materials from document type dropdown<br>Enter order number<br>![](./images/image3.PNG)
 	- Open the Case, add the OR number to primary order<br>Ensure that there are no items from left of `Fax`<br>If all items show [0], change `Status` to Closed. Else, leave open<br>![](./images/image8.PNG)
-5. Continue from Step 5 above<br>[Return to top](#paper-orders)
+5. Continue from Step 5 above<br>[Return to top](#intl-order-processing)
 
 ## Missing Data Cases
 
@@ -119,7 +119,7 @@ Should already have the OR number printed at the top of the order form
 	- Typically ordering Order Role
 7. Save and change `Case Owner` to *International - MD* or *Geneva - MD*
 	- Need select appropriate queue, such as *International - MD*
-![](./images/image7.PNG)<br>[Return to top](#paper-orders)
+![](./images/image7.PNG)<br>[Return to top](#intl-order-processing)
 
 ## Country Specific Notes
 | Country | Code | Billing | Misc |
@@ -133,5 +133,5 @@ Should already have the OR number printed at the top of the order form
 | Middle East + Northern Africa | NBP | bill acct | Partner is Newbridge (CR008898), addtl report rcvd Suzette Azar (CT030636) |
 | South Africa | RSA | bill acct | Partner is PharmaCentrix (CR008871), cannot return specs unless from QLab |
 | Spain | ES | bill acct | Partner is Palex (CR008874), mat return MUST be Palex |
-| Portugal | PT | bill acct | Partner is Palex (CR008874), mat return MUST be LusoPalex (CR008876) |
+| Portugal | PT | bill acct | Partner is Palex (CR008874), mat return MUST be LusoPalex (CR008876) |<br>
 [Return to top](#intl-order-processing)
