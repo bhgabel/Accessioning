@@ -16,7 +16,7 @@ Refer to *SOP-0191 Specimen Materials Processing and Accessioning* and *SOP-OP-P
 	- Example:
 	> Patient: John Smith (01/01/1964), Search "joh* smi* 1964"
 3. Create new Contact [Patient]<br>
-	- Enter all information in the Patient Information section of the req
+	- Enter all information in the Patient Information section of the req<br>
 	![](./images/image1.PNG)
 	![](./images/image2.PNG)
 4. `Order Entry Guide`
@@ -123,7 +123,7 @@ Should already have the OR number printed at the top of the order form
 
 ## Country Specific Notes
 | Country | Code | Billing | Misc |
-| --- | --- | --- | --- | --- |
+| :--- | :---: | :--- | :--- |
 | Ontario, Canada | ON | private insurance | Need OHIP approval paperwork, if missing create MD case to INTL Logistics |
 | Quebec, Canada | QC | bill acct | Need RAMQ + 2 signatures, if missing create MD case to INTL Logistics |
 | rest of Canada | AB, BC, NL, NS, NB, MB, PE, SK | bill acct | N/A |
@@ -134,3 +134,4 @@ Should already have the OR number printed at the top of the order form
 | South Africa | RSA | bill acct | Partner is PharmaCentrix (CR008871), cannot return specs unless from QLab |
 | Spain | ES | bill acct | Partner is Palex (CR008874), mat return MUST be Palex |
 | Portugal | PT | bill acct | Partner is Palex (CR008874), mat return MUST be LusoPalex (CR008876) |
+[Return to top](#intl-order-processing)
