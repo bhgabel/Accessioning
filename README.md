@@ -86,10 +86,10 @@ Should already have the OR number printed at the top of the order form
 1. Double check that there are no orders associated with this patient
 2. Verify data and enter any missing patient information
 3. `Order Entry Guide`
-	- Channel = paper, Triage = new, bill type = per order, description = AT `initials`
+	- Channel = paper, Triage = new, bill type = per order, description = AT *initials*
 4. `Electronic Documents`
 	- Check that all information matches with appropriate patient
-	- `Edit` → `Re-index`<br>Select Specimen Related Materials from document type dropdown<br>Enter order number<br>![](./images/image3.PNG)
+	- `Edit` → `Re-index`<br>Select *Specimen Related Materials* from document type dropdown<br>Enter order number<br>![](./images/image3.PNG)
 	- Open the Case, add the OR number to primary order<br>Ensure that there are no items from left of `Fax`<br>If all items show [0], change `Status` to Closed. Else, leave open<br>![](./images/image8.PNG)
 5. Continue from Step 5 above<br>[Return to top](#intl-order-processing)
 
@@ -112,13 +112,15 @@ Should already have the OR number printed at the top of the order form
 	> CONF PT NAME<br>
 	> Per req: John Doe<br>Per PR: Jane Due
 5. Enter info into the `Subject`
-	- Format: (*province/country code*) *case type*
+	- Format: (*country/province/partner code*) *case type*
 	- Example 
 	> (QC) MD
 6. Select primary customer
 	- Typically ordering Order Role
-7. Save and change `Case Owner` to *International - MD* or *Geneva - MD*
-	- Need select appropriate queue, such as *International - MD*
+7. Save and change `Case Owner` to appropriate queue
+	- `International MD` for Asia, Pacific, Latin America, and Canada
+	- `International Logistics` for missing OHIP or RAMQ
+	- `Geneva MD` for any Europe, Middle East, or Africa
 ![](./images/image7.PNG)<br>[Return to top](#intl-order-processing)
 
 ## Country Specific Notes
@@ -127,8 +129,8 @@ Should already have the OR number printed at the top of the order form
 | Ontario, Canada | ON | private insurance | Need OHIP approval paperwork, if missing create MD case to INTL Logistics |
 | Quebec, Canada | QC | bill acct | Need RAMQ + 2 signatures, if missing create MD case to INTL Logistics |
 | rest of Canada | AB, BC, NL, NS, NB, MB, PE, SK | bill acct | N/A |
-| Singapore | SG | patient pre-pay | mat return defaults to Hardy Cheung |
-| Malaysia | MY | patient pre-pay | mat return defaults to Hardy Cheung |
+| Singapore | SG | patient pre-pay | mat return to Hardy Cheung (CR012078) |
+| Malaysia | MY | patient pre-pay | mat return to Hardy Cheung (CR012078) |
 | Hong Kong | Jacobson | bill acct | Partner is Jacobson (CR008894), addtl report rcvr Minne Wong (CT023976) |
 | Middle East + Northern Africa | NBP | bill acct | Partner is Newbridge (CR008898), addtl report rcvd Suzette Azar (CT030636) |
 | South Africa | RSA | bill acct | Partner is PharmaCentrix (CR008871), cannot return specs unless from QLab |
