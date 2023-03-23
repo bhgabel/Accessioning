@@ -124,7 +124,7 @@ Should already have the OR number printed at the top of the order form
 ![](./images/image7.PNG)<br>[Return to top](#intl-order-processing)
 
 ## Country Specific Notes
-| Country | Code | Billing | Misc |
+| Country | Case Code | Billing | Notes |
 | :--- | :---: | :--- | :--- |
 | Ontario, Canada | ON | private insurance | Need OHIP approval paperwork, if missing create MD case to INTL Logistics |
 | Quebec, Canada | QC | bill acct | Need RAMQ + 2 signatures, if missing create MD case to INTL Logistics |
@@ -135,5 +135,7 @@ Should already have the OR number printed at the top of the order form
 | Middle East + Northern Africa | NBP | bill acct | Partner is Newbridge (CR008898), addtl report rcvd Suzette Azar (CT030636) |
 | South Africa | RSA | bill acct | Partner is PharmaCentrix (CR008871), cannot return specs unless from QLab |
 | Spain | ES | bill acct | Partner is Palex (CR008874), mat return MUST be Palex |
-| Portugal | PT | bill acct | Partner is Palex (CR008874), mat return MUST be LusoPalex (CR008876) |<br>
+| Portugal | PT | bill acct | Partner is Palex (CR008874), mat return MUST be LusoPalex (CR008876) |
+| Korea | BMS | bill acct | ESI is always per req |
+| European Union | n/a | n/a | Patient info must be deidentified. Only IBC orders (except for studies) | <br>
 [Return to top](#intl-order-processing)
