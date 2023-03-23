@@ -137,5 +137,5 @@ Should already have the OR number printed at the top of the order form
 | Spain | ES | bill acct | Partner is Palex (CR008874), mat return MUST be Palex |
 | Portugal | PT | bill acct | Partner is Palex (CR008874), mat return MUST be LusoPalex (CR008876) |
 | Korea | BMS | bill acct | ESI is always per req |
-| European Union | n/a | n/a | Patient info must be deidentified. Only IBC orders (except for studies) | <br>
+| European Union | per country | per portal | Patient info must be deidentified. Only IBC orders (except for studies) | <br>
 [Return to top](#intl-order-processing)
